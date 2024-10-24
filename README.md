@@ -277,7 +277,7 @@ In this section, we present examples of the X-ray images for each class that wil
 
 Watch this demo video to see how to use the website effectively and understand its features:
 
-[![Demo Video](https://via.placeholder.com/150)](https://drive.google.com/drive/folders/19TFYR_hp-PilpA9UOWUI70p6zlJODW3d)
+[![Demo Video](https://via.placeholder.com/150)](https://drive.google.com/file/d/165S2Kf6V3nmRi5BGgcnp9tlOHN8B9xWP/view?usp=sharing)
 
 ### How to Use the Website
 In this video, you will learn:
