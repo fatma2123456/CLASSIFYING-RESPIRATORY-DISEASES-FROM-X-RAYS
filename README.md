@@ -295,7 +295,9 @@ Feel free to explore the website after watching the demo!
 
 ---
 ## Authors ✨
-<pre>Fatma Alzhra Ahmed - Main Contributor - <b><a href="https://github.com/fatma2123456">fatma2123456</a></b>
+<pre>
+Fatma Elzhra ahmed  - Aartificial Intelligence Engineering - <b><a href="https://github.com/fatma2123456">fatma2123456</a></b>
+Abdelrahman Mohamed Abdelwahab  - Computer Science Engineering -  <b><a herf ="https://github.com/AbdelrahmanMohamed252"> AbdelrahmanMohamed252</a></b>
 Supervised By :
 Eng / Mahmoud Talaat 
 Ai Engineer at MCiT (Ministry of Communication and Information Technology)
