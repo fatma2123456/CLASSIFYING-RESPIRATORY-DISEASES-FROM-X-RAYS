@@ -17,7 +17,7 @@
         <li><a href="#why-vgg19">Why We Chose VGG19 Over VGG16</a></li>
         <li><a href="#model-comparison">Model Comparison: VGG19 vs VGG16 vs Model From Scratch</a></li>
     </ul>
-###<font id="what-is-chest-disease-detection"> **What is Chest Disease Detection by X-ray?** </font>🤔
+<h2 id="what-is-chest-disease-detection">What is Chest Disease Detection by X-ray? 🤔</h2>
 
 Chest disease detection by X-ray utilizes deep learning models to analyze chest X-ray images for diagnosing conditions such as pneumonia, tuberculosis, and COVID-19. During the COVID-19 pandemic, this became a vital tool, as X-rays provided quick, non-invasive diagnostics. This project focuses on developing a web-based application that allows users to upload X-rays and receive predictions about their lung health, thereby reducing hospital visits and assisting healthcare professionals with quicker diagnoses. The goal is to help both patients and doctors understand whether a person has a respiratory disease, such as:
 
@@ -30,8 +30,8 @@ Chest disease detection by X-ray utilizes deep learning models to analyze chest 
 
 ---
 
-### **Datasets Used in This Project** 📊
-
+ <h2 id="datasets-used">Datasets Used in This Project 📊</h2>
+ 
 Three different datasets were utilized for the project, each focusing on detecting various chest diseases:
 
 1. **Dataset 1: COVID-19 Radiography Database (COVID-19 & Pneumonia)** 
