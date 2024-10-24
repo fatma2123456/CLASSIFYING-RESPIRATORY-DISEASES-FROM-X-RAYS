@@ -6,16 +6,15 @@
         <li><a href="#visualization">Visualization</a></li>
         <li><a href="#imbalanced-data">Imbalanced Data</a></li>
         <li><a href="#class-distribution">Class Distribution</a></li>
-        <li><a href="#imbalanced-data-impact">How Imbalanced Data Can Affect Our Model</a></li>
+        <li><a href="#imbalanced-data-impact">Imbalanced Data Can Affect Our Model</a></li>
         <li><a href="#solving-data-imbalance">Solving Data Imbalance Using Augmentation</a></li>
         <li><a href="#structure-of-datasets">Structure of the Datasets</a></li>
-        <li><a href="#train-validation-test">What is Train, Validation, and Test Data?</a></li>
-        <li><a href="#split-data">Why Do We Split Data into Train, Validation, and Test?</a></li>
         <li><a href="#vgg19">What is VGG19?</a></li>
         <li><a href="#similarity-vgg19-chest-diseases">How Similar is VGG19 ImageNet with Chest Diseases Images?</a></li>
         <li><a href="#vgg19-advantages-disadvantages">Advantages and Disadvantages of VGG19</a></li>
         <li><a href="#why-vgg19">Why We Chose VGG19 Over VGG16</a></li>
         <li><a href="#model-comparison">Model Comparison: VGG19 vs VGG16 vs Model From Scratch</a></li>
+        <li><a herf="#Grad-CAM Visualizations">Grad-CAM Visualizations</a></li>
     </ul>
 <h2 id="what-is-chest-disease-detection">What is Chest Disease Detection by X-ray? 🤔</h2>
 
@@ -80,7 +79,7 @@ Visualization in the context of machine learning refers to the graphical represe
 This imbalance can cause challenges when training machine learning models, as models may become biased toward the majority class. They might achieve high overall accuracy by primarily predicting the majority class while failing to effectively recognize the minority class. This can lead to poor performance, especially for applications where the minority class is of significant interest, such as in medical diagnoses or fraud detection.
 
 
-**Class Distribution** 📊  
+ <h2 id="class-distribution">Class Distribution 📊</h2>
 Here’s the distribution of images across different classes, sorted in descending order by the number of images:
 
 | Class                     | Number of Images | Percentage (%) |
@@ -98,15 +97,27 @@ As we will see in the next figure:
 ![Data Visualization](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Data%20Visualization.png)
 
 ---
-### **How Imbalanced Data Can Affect Our Model** ⚖️
+<h2 id="imbalanced-data-impact">Imbalanced Data Can Affect Our Model ⚖️</h2>
 
 Imbalanced data can cause several issues in model performance:
 
 - **Poor Generalization**: The model may struggle to recognize the minority class effectively, leading to high accuracy but poor recall for that class.
 - **Overfitting**: The model may focus on the majority class and fail to generalize well to the minority class, resulting in overfitting.
 - **Bias**: Predictions may be biased toward the majority class, which can lead to incorrect conclusions, especially in critical applications like medical diagnostics.
+- 
+---
+ <h2 id="structure-of-datasets">Structure of the Datasets 📂</h2>
 
-### **Solving Data Imbalance Using Augmentation** 🌱
+Each dataset follows the typical data structure for deep learning tasks:
+
+- **Training Set**: 🏋️‍♂️ This set is used to train the model and constitutes about 70-80% of the dataset.
+- **Validation Set**: 🔧 This is 10-20% of the dataset and is used to fine-tune model hyperparameters during training to avoid overfitting.
+- **Test Set**: 🧪 This set, around 10-20% of the dataset, is used to evaluate the model’s performance on unseen data.
+
+---
+
+
+<h2 id="solving-data-imbalance">Solving Data Imbalance Using Augmentation 🌱</h2>
 
 Imbalanced data is a common issue in machine learning, particularly in medical imaging datasets. To address this, **data augmentation** is an effective approach.
 
@@ -137,47 +148,22 @@ Here are some commonly used techniques to handle data imbalance:
    )
    test_gen = ImageDataGenerator(rescale=1. / 255)
    val_gen = ImageDataGenerator(rescale=1. / 255)
----
-### **Structure of the Datasets** 📂
 
-Each dataset follows the typical data structure for deep learning tasks:
-
-- **Training Set**: 🏋️‍♂️ This set is used to train the model and constitutes about 70-80% of the dataset.
-- **Validation Set**: 🔧 This is 10-20% of the dataset and is used to fine-tune model hyperparameters during training to avoid overfitting.
-- **Test Set**: 🧪 This set, around 10-20% of the dataset, is used to evaluate the model’s performance on unseen data.
 
 ---
-
-### **What is Train, Validation, and Test Data?** 🧠
-
-- **Training Data**: 📘 This is the portion of the dataset used by the model to learn patterns and make predictions.
-- **Validation Data**: 🧐 This set is used during training to validate the model’s performance and adjust hyperparameters.
-- **Test Data**: 🎯 This final set is used to evaluate the performance of the fully trained model on unseen data.
-
----
-
-### **Why Do We Split Data into Train, Validation, and Test?** 🤔
-
-The purpose of splitting the data is to ensure the model generalizes well to new, unseen data. Here's why we split the data:
-
-- **Training Data**: 🛠️ Teaches the model to recognize patterns.
-- **Validation Data**: 🛎️ Helps tune the model's hyperparameters and check performance during training.
-- **Test Data**: 📊 Provides an unbiased evaluation of the model's performance after training is complete.
-
----
-### **What is VGG19?** 🤖
+ <h2 id="vgg19">What is VGG19? 🤖</h2>
 
 VGG19 is a deep convolutional neural network model with 19 layers, developed by the Visual Geometry Group (VGG) at Oxford University. It was pre-trained on the ImageNet dataset, which contains over a million images across 1000 different classes. VGG19 is known for its simple and uniform structure, using small (3x3) convolution filters but with a large depth.
 
 ---
 
-### **How Similar is VGG19 ImageNet with Chest Diseases Images?** 🩺
+<h2 id="#similarity-vgg19-chest-diseases">How Similar is VGG19 ImageNet with Chest Diseases Images? 🩺</h2>
 
-VGG19 was originally trained on ImageNet, which includes general images like animals, plants, and objects. While these images are very different from medical images like X-rays, transfer learning allows VGG19 to apply the knowledge it learned from ImageNet to medical imaging tasks. By fine-tuning the final layers, VGG19 can focus on the specific features relevant to chest disease detection.
+VGG19 was originally trained on ImageNet, which includes general images like animals, plants, and objects. While these images differ from medical images like X-rays, the model demonstrated a high level of similarity with the X-ray data during transfer learning. This allowed VGG19 to effectively apply the knowledge it learned from ImageNet to medical imaging tasks. By fine-tuning the final layers, VGG19 was able to focus on the specific features relevant to chest disease detection, improving its performance on X-ray data.
 
 ---
 
-### **Advantages and Disadvantages of VGG19** ⚖️
+<h2 id ="#vgg19-advantages-disadvantages">Advantages and Disadvantages of VGG19 ⚖️</h2>
 
 - **Advantages**:
   - **Proven Performance**: VGG19 is well-known for its accuracy in image classification tasks.
@@ -189,12 +175,12 @@ VGG19 was originally trained on ImageNet, which includes general images like ani
 
 ---
 
-### **Why We Chose VGG19 Over VGG16** 🔄
+ <h2 id="#why-vgg19">Why We Chose VGG19 Over VGG16 🔄</h2>
 
 Initially, we tried using **VGG16** for our chest disease classification, but the **accuracy** results were not as high as we expected. After exploring different models, we chose **VGG19** because its deeper architecture and feature extraction capabilities are more suitable for medical imaging tasks like chest X-rays. Despite the limited resources, we managed to achieve good accuracy using VGG19, and we know that with better computational power, the accuracy could be significantly improved.
 
 ---
-### **Model Comparison: VGG19 vs VGG16 vs Model From Scratch** 📊
+<h2 id="#model-comparison">Model Comparison: VGG19 vs VGG16 vs Model From Scratch 📊</h2>
 
 Below is a comparison between three models used for chest disease classification: **VGG19**, **VGG16**, and a model trained **from scratch**. The comparison highlights their respective training, validation, and test accuracy along with their losses.
 
@@ -272,7 +258,7 @@ The confusion matrix provides a summary of the prediction results on a classific
 - Diagonal values represent the correct predictions for each class, while off-diagonal values represent misclassifications.
 
 ---
-# Grad-CAM Visualization for X-Ray Classes 📊
+<h2 id="#Grad-CAM Visualizations"> Grad-CAM Visualization for X-Ray Classes 📊</h2>
 
 In this section, we present examples of the X-ray images for each class that will be analyzed using Grad-CAM. The images illustrate how the model identifies specific patterns related to different respiratory diseases.
 
@@ -307,4 +293,10 @@ In this video, you will learn:
 
 Feel free to explore the website after watching the demo!
 
-
+---
+## Authors ✨
+Fatma Alzhra Ahmed - Main Contributor - <b><a href="https://github.com/fatma2123456">fatma2123456</a></b>
+Supervised By :
+Eng / Mahmoud Talaat 
+Ai Engineer at MCiT (Ministry of Communication and Information Technology)
+TA at Zewail University ( Artificial intelligence and Data science )
