@@ -275,9 +275,11 @@ In this section, we present examples of the X-ray images for each class that wil
 
 # Demo Video 🎥
 
-Watch this demo video to see how to use the website effectively and understand its features:
+Watch this demo video to see how to use the website effectively:
 
-[![Demo Video](https://via.placeholder.com/150)](https://drive.google.com/file/d/165S2Kf6V3nmRi5BGgcnp9tlOHN8B9xWP/view?usp=sharing)
+<a href="https://drive.google.com/file/d/165S2Kf6V3nmRi5BGgcnp9tlOHN8B9xWP/view?usp=sharing">
+    <img src="https://via.placeholder.com/640x360.png?text=Demo+Video" alt="Demo Video" />
+</a>
 
 ### How to Use the Website
 In this video, you will learn:
@@ -285,5 +287,8 @@ In this video, you will learn:
 - Understanding the model's predictions.
 - Interpreting the Grad-CAM visualizations.
 - Navigating the user interface.
+
+Feel free to explore the website after watching the demo!
+
 
 Feel free to explore the website after watching the demo!
