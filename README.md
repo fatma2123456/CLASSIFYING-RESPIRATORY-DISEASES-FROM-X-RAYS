@@ -175,3 +175,37 @@ VGG19 was originally trained on ImageNet, which includes general images like ani
 ### **Why We Chose VGG19 Over VGG16** 🔄
 
 Initially, we tried using **VGG16** for our chest disease classification, but the **accuracy** results were not as high as we expected. After exploring different models, we chose **VGG19** because its deeper architecture and feature extraction capabilities are more suitable for medical imaging tasks like chest X-rays. Despite the limited resources, we managed to achieve good accuracy using VGG19, and we know that with better computational power, the accuracy could be significantly improved.
+---
+### **Model Comparison: VGG19 vs VGG16 vs Model From Scratch** 📊
+
+Below is a comparison between three models used for chest disease classification: **VGG19**, **VGG16**, and a model trained **from scratch**. The comparison highlights their respective training, validation, and test accuracy along with their losses.
+
+| **Model**           | **Train Loss** | **Val Loss** | **Test Loss** | **Train Accuracy** | **Val Accuracy** | **Test Accuracy** |
+|---------------------|----------------|--------------|---------------|--------------------|------------------|-------------------|
+| **VGG19**           | 0.1166         | 0.2392       | 0.2365        | **95.54%**          | **91.63%**        | **91.65%**         |
+| **VGG16**           | 0.4927         | 0.5423       | 0.5021        | 80.02%              | 77.61%            | 79.89%             |
+| **From Scratch**     | 0.9191         | 0.8634       | 0.8587        | 91.91%              | 86.34%            | 85.87%             |
+
+### **VGG19 Loss and Accuracy**:
+- Here is a visualization of **VGG19's Loss and Accuracy** during training:
+
+**VGG19 Accuracy Plot**  
+![VGG19 Accuracy](./Images/Train.png)
+
+**VGG19 Loss Plot**  
+![VGG19 Loss](./Images/Loss.png)
+
+---
+
+### **Observations**:
+- **VGG19** showed the best overall performance with a **train accuracy of 95.54%**, **test accuracy of 91.65%**, and **validation accuracy of 91.63%**.
+- **VGG16** lagged behind, with significantly lower performance, especially in terms of test accuracy (**79.89%**) and validation accuracy (**77.61%**).
+- The model **trained from scratch** performed well but did not reach the accuracy levels of VGG19, with **train accuracy of 91.91%** and **test accuracy of 85.87%**.
+
+---
+
+### **Why VGG19 Outperformed**:
+- **Depth of Layers**: VGG19 has a deeper architecture, which allows it to learn more complex patterns, especially in medical imaging tasks.
+- **Transfer Learning**: Since VGG19 was pre-trained on ImageNet, it was able to transfer its learning to medical images effectively, especially after fine-tuning for chest X-rays.
+
+Despite the resource constraints, VGG19 provided the most accurate and reliable results, making it the optimal choice for our task. We believe with further fine-tuning and access to better resources, the performance can be improved even further.
