@@ -1,5 +1,22 @@
 # Chest Disease Detection by X-ray 🩻
-
+ <ul>
+        <li><a href="#what-is-chest-disease-detection">What is Chest Disease Detection by X-ray?</a></li>
+        <li><a href="#datasets-used">Datasets Used in This Project</a></li>
+        <li><a href="#why-use-xrays">Why We Use X-rays Instead of PCR?</a></li>
+        <li><a href="#visualization">Visualization</a></li>
+        <li><a href="#imbalanced-data">What is Imbalanced Data?</a></li>
+        <li><a href="#class-distribution">Class Distribution</a></li>
+        <li><a href="#imbalanced-data-impact">How Imbalanced Data Can Affect Our Model</a></li>
+        <li><a href="#solving-data-imbalance">Solving Data Imbalance Using Augmentation</a></li>
+        <li><a href="#structure-of-datasets">Structure of the Datasets</a></li>
+        <li><a href="#train-validation-test">What is Train, Validation, and Test Data?</a></li>
+        <li><a href="#split-data">Why Do We Split Data into Train, Validation, and Test?</a></li>
+        <li><a href="#vgg19">What is VGG19?</a></li>
+        <li><a href="#similarity-vgg19-chest-diseases">How Similar is VGG19 ImageNet with Chest Diseases Images?</a></li>
+        <li><a href="#vgg19-advantages-disadvantages">Advantages and Disadvantages of VGG19</a></li>
+        <li><a href="#why-vgg19">Why We Chose VGG19 Over VGG16</a></li>
+        <li><a href="#model-comparison">Model Comparison: VGG19 vs VGG16 vs Model From Scratch</a></li>
+    </ul>
 ### **What is Chest Disease Detection by X-ray?** 🤔
 
 Chest disease detection by X-ray utilizes deep learning models to analyze chest X-ray images for diagnosing conditions such as pneumonia, tuberculosis, and COVID-19. During the COVID-19 pandemic, this became a vital tool, as X-rays provided quick, non-invasive diagnostics. This project focuses on developing a web-based application that allows users to upload X-rays and receive predictions about their lung health, thereby reducing hospital visits and assisting healthcare professionals with quicker diagnoses. The goal is to help both patients and doctors understand whether a person has a respiratory disease, such as:
