@@ -60,7 +60,8 @@ Visualization in the context of machine learning refers to the graphical represe
 - **Communicating Results**: Visualizations make it easier to communicate results to stakeholders, especially non-technical individuals, by providing a clear and concise way to understand the model's output and its reliability.
 
 **What is Imbalanced Data?** ⚖️  
-Imbalanced data refers to a dataset where the distribution of classes is not uniform. In other words, some classes have significantly more samples than others. For example, in a binary classification problem where one class represents 90% of the data and the other class only 10%, the dataset is considered imbalanced. This can lead to problems in training machine learning models, as they may become biased towards the majority class.
+This imbalance can cause challenges when training machine learning models, as models may become biased toward the majority class. They might achieve high overall accuracy by primarily predicting the majority class while failing to effectively recognize the minority class. This can lead to poor performance, especially for applications where the minority class is of significant interest, such as in medical diagnoses or fraud detection.
+
 
 **Class Distribution** 📊  
 Here’s the distribution of images across different classes, sorted in descending order by the number of images:
@@ -78,3 +79,42 @@ Here’s the distribution of images across different classes, sorted in descendi
 As we will see in the next figure:
 
 ![Data Visualization](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Data%20Visualization.png)
+
+---
+### **How Imbalanced Data Can Affect Our Model** ⚖️
+
+Imbalanced data can cause several issues in model performance:
+
+- **Poor Generalization**: The model may struggle to recognize the minority class effectively, leading to high accuracy but poor recall for that class.
+- **Overfitting**: The model may focus on the majority class and fail to generalize well to the minority class, resulting in overfitting.
+- **Bias**: Predictions may be biased toward the majority class, which can lead to incorrect conclusions, especially in critical applications like medical diagnostics.
+
+### **Solving Data Imbalance Using Augmentation** 🌱
+
+Imbalanced data is a common issue in machine learning, particularly in medical imaging datasets. To address this, **data augmentation** is an effective approach.
+
+#### **What is Data Augmentation?**  
+Data augmentation involves creating additional training data from the existing dataset by applying transformations to original images. This technique helps balance the dataset by artificially increasing the number of samples in underrepresented classes.
+
+#### **Why Use Augmentation for Imbalanced Data?**  
+- **Increasing Diversity**: Introduces variability in the dataset, allowing the model to generalize better.
+- **Balancing Class Distribution**: Augmenting only the minority classes creates a more balanced dataset without the need for additional real-world data.
+- **Improving Model Robustness**: Augmented images make the model more resilient to variations like rotations, flips, and other distortions, enhancing performance on unseen data.
+
+### **Common Augmentation Techniques**  
+Here are some commonly used techniques to handle data imbalance:
+
+1. **Rotation**: Rotating images by small angles to create new perspectives.
+   ```python
+   from keras.preprocessing.image import ImageDataGenerator
+   
+   train_gen = ImageDataGenerator(
+       rescale=1. / 255,
+       zoom_range=0.1,
+       width_shift_range=0.1,
+       height_shift_range=0.1,
+       rotation_range=10,
+       fill_mode='nearest'
+   )
+   test_gen = ImageDataGenerator(rescale=1. / 255)
+   val_gen = ImageDataGenerator(rescale=1. / 255)
