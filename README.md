@@ -50,18 +50,30 @@ X-rays provide a non-invasive, quick, and widely available method for diagnosing
 ---
 ### **Visualization** 📊
 
-**What is Visualization?**  
+**What is Visualization?** 🖼️  
 Visualization in the context of machine learning refers to the graphical representation of data, model performance, or results. It can involve plotting data distributions, learning curves, confusion matrices, Grad-CAM heatmaps, or other metrics to help interpret how a model is behaving and to explore the underlying dataset.
 
-**Why we use Visualization:**  
+**Why We Use Visualization:** 🔍  
 - **Understanding Data**: Visualization helps in identifying patterns, correlations, and anomalies in the dataset. For example, plotting class distributions can reveal imbalances, and scatter plots can help understand relationships between variables.
 - **Model Performance Evaluation**: We use visualization to interpret how well the model is learning, using tools like accuracy and loss plots, confusion matrices, and ROC curves to observe model progress over epochs.
 - **Debugging**: Visualization can highlight where the model might be going wrong. For example, Grad-CAM (Gradient-weighted Class Activation Mapping) heatmaps can show which parts of an image the model focused on when making a decision, helping us understand and interpret predictions.
 - **Communicating Results**: Visualizations make it easier to communicate results to stakeholders, especially non-technical individuals, by providing a clear and concise way to understand the model's output and its reliability.
 
-**What is Imbalanced Data?**  
-
+**What is Imbalanced Data?** ⚖️  
 Imbalanced data refers to a dataset where the distribution of classes is not uniform. In other words, some classes have significantly more samples than others. For example, in a binary classification problem where one class represents 90% of the data and the other class only 10%, the dataset is considered imbalanced. This can lead to problems in training machine learning models, as they may become biased towards the majority class.
+
+**Class Distribution** 📊  
+Here’s the distribution of images across different classes, sorted in descending order by the number of images:
+
+| Class                     | Number of Images | Percentage (%) |
+|---------------------------|------------------|----------------|
+| Normal                    | 6500             | 25.1           |
+| Lung Opacity              | 6012             | 23.2           |
+| COVID-19                  | 4897             | 18.9           |
+| Pneumonia-Bacterial       | 3001             | 11.6           |
+| Pneumonia-Viral           | 3001             | 11.6           |
+| Tuberculosis              | 2494             | 9.6            |
+| **Total**                 | **25905**        | **100.0**      |
 
 As we will see in the next figure:
 
