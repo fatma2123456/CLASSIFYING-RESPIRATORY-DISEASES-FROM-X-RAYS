@@ -277,7 +277,7 @@ In this section, we present examples of the X-ray images for each class that wil
 
 Watch this demo video to see how to use the website effectively:
 
-<a href="https://drive.google.com/file/d/165S2Kf6V3nmRi5BGgcnp9tlOHN8B9xWP/view?usp=sharing">
+<a href="https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Demo%20Video.mp4">
     <img src="https://img.youtube.com/vi/VIDEO_ID/0.jpg" alt="Demo Video" width="640" height="360">
 </a>
 
@@ -289,3 +289,4 @@ In this video, you will learn:
 - Navigating the user interface.
 
 Feel free to explore the website after watching the demo!
+
