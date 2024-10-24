@@ -14,8 +14,7 @@
         <li><a href="#vgg19-advantages-disadvantages">Advantages and Disadvantages of VGG19</a></li>
         <li><a href="#why-vgg19">Why We Chose VGG19 Over VGG16</a></li>
         <li><a href="#model-comparison">Model Comparison: VGG19 vs VGG16 vs Model From Scratch</a></li>
-        <li><a href="Grad-CAM Visualizations">Grad-CAM Visualizations</a></li>
-
+        <li><a href="#grad-cam-visualizations">Grad-CAM Visualizations</a></li>
     </ul>
 <h2 id="what-is-chest-disease-detection">What is Chest Disease Detection by X-ray? 🤔</h2>
 
@@ -259,7 +258,7 @@ The confusion matrix provides a summary of the prediction results on a classific
 - Diagonal values represent the correct predictions for each class, while off-diagonal values represent misclassifications.
 
 ---
-<h2 id="#Grad-CAM Visualizations"> Grad-CAM Visualization for X-Ray Classes 📊</h2>
+<h2 id="#grad-cam-visualizations"> Grad-CAM Visualization for X-Ray Classes 📊</h2>
 
 In this section, we present examples of the X-ray images for each class that will be analyzed using Grad-CAM. The images illustrate how the model identifies specific patterns related to different respiratory diseases.
 
