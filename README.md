@@ -4,7 +4,7 @@
         <li><a href="#datasets-used">Datasets Used in This Project</a></li>
         <li><a href="#why-use-xrays">Why We Use X-rays Instead of PCR?</a></li>
         <li><a href="#visualization">Visualization</a></li>
-        <li><a href="#imbalanced-data">What is Imbalanced Data?</a></li>
+        <li><a href="#imbalanced-data">Imbalanced Data</a></li>
         <li><a href="#class-distribution">Class Distribution</a></li>
         <li><a href="#imbalanced-data-impact">How Imbalanced Data Can Affect Our Model</a></li>
         <li><a href="#solving-data-imbalance">Solving Data Imbalance Using Augmentation</a></li>
@@ -60,12 +60,12 @@ Three different datasets were utilized for the project, each focusing on detecti
 
 ---
 
-### **Why We Use X-rays Instead of PCR?** 💡
+<h2 id="why-use-xrays">Why We Use X-rays Instead of PCR? 💡</h2>
 
 X-rays provide a non-invasive, quick, and widely available method for diagnosing lung diseases. While PCR tests are commonly used for detecting viral infections like COVID-19, they do not provide information about the state of the lungs. X-rays, on the other hand, allow medical professionals to visualize lung damage or inflammation, which can indicate diseases such as pneumonia or COVID-19. This helps in a broader diagnosis, especially for conditions that PCR cannot detect. 
 
 ---
-### **Visualization** 📊
+<h2 id="visualization">Visualization 📊</h2>
 
 **What is Visualization?** 🖼️  
 Visualization in the context of machine learning refers to the graphical representation of data, model performance, or results. It can involve plotting data distributions, learning curves, confusion matrices, Grad-CAM heatmaps, or other metrics to help interpret how a model is behaving and to explore the underlying dataset.
@@ -76,7 +76,7 @@ Visualization in the context of machine learning refers to the graphical represe
 - **Debugging**: Visualization can highlight where the model might be going wrong. For example, Grad-CAM (Gradient-weighted Class Activation Mapping) heatmaps can show which parts of an image the model focused on when making a decision, helping us understand and interpret predictions.
 - **Communicating Results**: Visualizations make it easier to communicate results to stakeholders, especially non-technical individuals, by providing a clear and concise way to understand the model's output and its reliability.
 
-**What is Imbalanced Data?** ⚖️  
+<h2 id="imbalanced-data">Imbalanced Data ⚖️</h2>
 This imbalance can cause challenges when training machine learning models, as models may become biased toward the majority class. They might achieve high overall accuracy by primarily predicting the majority class while failing to effectively recognize the minority class. This can lead to poor performance, especially for applications where the minority class is of significant interest, such as in medical diagnoses or fraud detection.
 
 
