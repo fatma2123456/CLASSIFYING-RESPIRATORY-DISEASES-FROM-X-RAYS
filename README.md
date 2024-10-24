@@ -295,8 +295,8 @@ Feel free to explore the website after watching the demo!
 
 ---
 ## Authors ✨
-Fatma Alzhra Ahmed - Main Contributor - <b><a href="https://github.com/fatma2123456">fatma2123456</a></b>
+<pre>Fatma Alzhra Ahmed - Main Contributor - <b><a href="https://github.com/fatma2123456">fatma2123456</a></b>
 Supervised By :
 Eng / Mahmoud Talaat 
 Ai Engineer at MCiT (Ministry of Communication and Information Technology)
-TA at Zewail University ( Artificial intelligence and Data science )
+TA at Zewail University ( Artificial intelligence and Data science )</pre>
