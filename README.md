@@ -255,10 +255,6 @@ The confusion matrix provides a summary of the prediction results on a classific
 - Diagonal values represent the correct predictions for each class, while off-diagonal values represent misclassifications.
 
 ---
-
-By analyzing these metrics, we can gain insights into the strengths and weaknesses of our VGG19 model, allowing for targeted improvements in future iterations.
-
----
 # Grad-CAM Visualization for X-Ray Classes 📊
 
 In this section, we present examples of the X-ray images for each class that will be analyzed using Grad-CAM. The images illustrate how the model identifies specific patterns related to different respiratory diseases.
@@ -277,4 +273,17 @@ In this section, we present examples of the X-ray images for each class that wil
 
 ---
 
-These images will be processed using Grad-CAM to highlight the regions of interest that influenced the model’s predictions.
+# Demo Video 🎥
+
+Watch this demo video to see how to use the website effectively and understand its features:
+
+[![Demo Video](https://via.placeholder.com/150)](https://drive.google.com/drive/folders/19TFYR_hp-PilpA9UOWUI70p6zlJODW3d)
+
+### How to Use the Website
+In this video, you will learn:
+- How to upload an X-ray image.
+- Understanding the model's predictions.
+- Interpreting the Grad-CAM visualizations.
+- Navigating the user interface.
+
+Feel free to explore the website after watching the demo!
