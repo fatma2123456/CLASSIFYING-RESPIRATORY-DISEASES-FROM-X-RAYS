@@ -175,6 +175,7 @@ VGG19 was originally trained on ImageNet, which includes general images like ani
 ### **Why We Chose VGG19 Over VGG16** 🔄
 
 Initially, we tried using **VGG16** for our chest disease classification, but the **accuracy** results were not as high as we expected. After exploring different models, we chose **VGG19** because its deeper architecture and feature extraction capabilities are more suitable for medical imaging tasks like chest X-rays. Despite the limited resources, we managed to achieve good accuracy using VGG19, and we know that with better computational power, the accuracy could be significantly improved.
+
 ---
 ### **Model Comparison: VGG19 vs VGG16 vs Model From Scratch** 📊
 
@@ -189,11 +190,12 @@ Below is a comparison between three models used for chest disease classification
 ### **VGG19 Loss and Accuracy**:
 - Here is a visualization of **VGG19's Loss and Accuracy** during training:
 
-**VGG19 Accuracy Plot**  
-![VGG19 Accuracy](./Images/Train.png)
+### **VGG19 Accuracy Plot**  
+![VGG19 Accuracy](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Train.png)
 
-**VGG19 Loss Plot**  
-![VGG19 Loss](./Images/Loss.png)
+### **VGG19 Loss Plot**  
+![VGG19 Loss](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Loss.png)
+
 
 ---
 
@@ -209,3 +211,49 @@ Below is a comparison between three models used for chest disease classification
 - **Transfer Learning**: Since VGG19 was pre-trained on ImageNet, it was able to transfer its learning to medical images effectively, especially after fine-tuning for chest X-rays.
 
 Despite the resource constraints, VGG19 provided the most accurate and reliable results, making it the optimal choice for our task. We believe with further fine-tuning and access to better resources, the performance can be improved even further.
+
+---
+
+# Model Evaluation Metrics 📊
+
+In this section, we present the evaluation metrics for our model using the VGG19 architecture. These metrics help us understand the model's performance on the dataset, particularly in terms of classification accuracy.
+
+---
+
+## Classification Report 📈
+
+The following table summarizes the precision, recall, F1-score, and support for each class in our dataset:
+
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|--------|
+| 0.0   | 0.97      | 0.98   | 0.97     | 980    |
+| 1.0   | 0.93      | 0.90   | 0.92     | 1203   |
+| 2.0   | 0.91      | 0.94   | 0.93     | 1300   |
+| 3.0   | 0.82      | 0.85   | 0.83     | 601    |
+| 4.0   | 0.84      | 0.80   | 0.82     | 601    |
+| 5.0   | 1.00      | 0.99   | 0.99     | 499    |
+| **Accuracy** |  |  | **0.92** | **5184** |
+| **Macro Avg** | 0.91 | 0.91 | 0.91 | 5184 |
+| **Weighted Avg** | 0.92 | 0.92 | 0.92 | 5184 |
+
+### Definitions:
+- **Precision**: The ratio of correctly predicted positive observations to the total predicted positives.
+- **Recall**: The ratio of correctly predicted positive observations to all actual positives.
+- **F1-Score**: The weighted average of Precision and Recall. It ranges from 0 to 1, where 1 indicates perfect precision and recall.
+- **Support**: The number of actual occurrences of the class in the specified dataset.
+
+---
+
+## Confusion Matrix 📉
+
+The confusion matrix provides a summary of the prediction results on a classification problem. Below is the confusion matrix for the VGG19 model:
+
+![Confusion Matrix](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/confusion%20matrix.png)
+
+### Notes:
+- The confusion matrix allows us to visualize how many instances were classified correctly and incorrectly across different classes.
+- Diagonal values represent the correct predictions for each class, while off-diagonal values represent misclassifications.
+
+---
+
+By analyzing these metrics, we can gain insights into the strengths and weaknesses of our VGG19 model, allowing for targeted improvements in future iterations.
