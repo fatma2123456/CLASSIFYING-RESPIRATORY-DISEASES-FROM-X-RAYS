@@ -14,7 +14,8 @@
         <li><a href="#vgg19-advantages-disadvantages">Advantages and Disadvantages of VGG19</a></li>
         <li><a href="#why-vgg19">Why We Chose VGG19 Over VGG16</a></li>
         <li><a href="#model-comparison">Model Comparison: VGG19 vs VGG16 vs Model From Scratch</a></li>
-        <li><a herf="#Grad-CAM Visualizations">Grad-CAM Visualizations</a></li>
+        <li><a href="Grad-CAM Visualizations">Grad-CAM Visualizations</a></li>
+
     </ul>
 <h2 id="what-is-chest-disease-detection">What is Chest Disease Detection by X-ray? 🤔</h2>
 
