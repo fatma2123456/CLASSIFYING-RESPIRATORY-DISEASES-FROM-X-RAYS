@@ -105,6 +105,8 @@ Data augmentation involves creating additional training data from the existing d
 Here are some commonly used techniques to handle data imbalance:
 
 1. **Rotation**: Rotating images by small angles to create new perspectives.
+2. **Zooming**: Randomly zooming into images to simulate different scales.
+3. **Shifting**: Translating images along the x or y axis.
    ```python
    from keras.preprocessing.image import ImageDataGenerator
    
@@ -118,3 +120,58 @@ Here are some commonly used techniques to handle data imbalance:
    )
    test_gen = ImageDataGenerator(rescale=1. / 255)
    val_gen = ImageDataGenerator(rescale=1. / 255)
+---
+### **Structure of the Datasets** 📂
+
+Each dataset follows the typical data structure for deep learning tasks:
+
+- **Training Set**: 🏋️‍♂️ This set is used to train the model and constitutes about 70-80% of the dataset.
+- **Validation Set**: 🔧 This is 10-20% of the dataset and is used to fine-tune model hyperparameters during training to avoid overfitting.
+- **Test Set**: 🧪 This set, around 10-20% of the dataset, is used to evaluate the model’s performance on unseen data.
+
+---
+
+### **What is Train, Validation, and Test Data?** 🧠
+
+- **Training Data**: 📘 This is the portion of the dataset used by the model to learn patterns and make predictions.
+- **Validation Data**: 🧐 This set is used during training to validate the model’s performance and adjust hyperparameters.
+- **Test Data**: 🎯 This final set is used to evaluate the performance of the fully trained model on unseen data.
+
+---
+
+### **Why Do We Split Data into Train, Validation, and Test?** 🤔
+
+The purpose of splitting the data is to ensure the model generalizes well to new, unseen data. Here's why we split the data:
+
+- **Training Data**: 🛠️ Teaches the model to recognize patterns.
+- **Validation Data**: 🛎️ Helps tune the model's hyperparameters and check performance during training.
+- **Test Data**: 📊 Provides an unbiased evaluation of the model's performance after training is complete.
+
+---
+### **What is VGG19?** 🤖
+
+VGG19 is a deep convolutional neural network model with 19 layers, developed by the Visual Geometry Group (VGG) at Oxford University. It was pre-trained on the ImageNet dataset, which contains over a million images across 1000 different classes. VGG19 is known for its simple and uniform structure, using small (3x3) convolution filters but with a large depth.
+
+---
+
+### **How Similar is VGG19 ImageNet with Chest Diseases Images?** 🩺
+
+VGG19 was originally trained on ImageNet, which includes general images like animals, plants, and objects. While these images are very different from medical images like X-rays, transfer learning allows VGG19 to apply the knowledge it learned from ImageNet to medical imaging tasks. By fine-tuning the final layers, VGG19 can focus on the specific features relevant to chest disease detection.
+
+---
+
+### **Advantages and Disadvantages of VGG19** ⚖️
+
+- **Advantages**:
+  - **Proven Performance**: VGG19 is well-known for its accuracy in image classification tasks.
+  - **Transfer Learning**: It allows for faster training on medical images by leveraging pre-trained weights from ImageNet.
+
+- **Disadvantages**:
+  - **Computationally Expensive**: Requires significant processing power and memory, especially for large datasets like X-ray images.
+  - **Slow Training Time**: The large depth of the network can result in slow training.
+
+---
+
+### **Why We Chose VGG19 Over VGG16** 🔄
+
+Initially, we tried using **VGG16** for our chest disease classification, but the **accuracy** results were not as high as we expected. After exploring different models, we chose **VGG19** because its deeper architecture and feature extraction capabilities are more suitable for medical imaging tasks like chest X-rays. Despite the limited resources, we managed to achieve good accuracy using VGG19, and we know that with better computational power, the accuracy could be significantly improved.
