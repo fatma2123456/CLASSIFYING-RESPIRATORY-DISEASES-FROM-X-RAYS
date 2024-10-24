@@ -263,16 +263,16 @@ By analyzing these metrics, we can gain insights into the strengths and weakness
 
 In this section, we present examples of the X-ray images for each class that will be analyzed using Grad-CAM. The images illustrate how the model identifies specific patterns related to different respiratory diseases.
 
-## Class 0: Normal
+##  Normal
 ![Normal Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Normal.png)
 
-## Class 1: Pneumonia-Bacterial
+##  Pneumonia-Bacterial
 ![Pneumonia Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Pneumonia-Bacterial.png)
 
-## Class 2: COVID-19
+##  COVID-19
 ![COVID-19 Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/covid.png)
 
-## Class 3: Tuberculosis
+##  Tuberculosis
 ![Tuberculosis Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Tuberculosis.png)
 
 ---
