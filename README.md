@@ -1,5 +1,5 @@
 # Chest Disease Detection by X-ray 
-<div style="text-align: right;">
+<div style="text-align: left;">
   <img src="https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Picture2_20241025_195821_0000.png" alt="Government Logo" width="150"/> 
 </div>
  <ul>
