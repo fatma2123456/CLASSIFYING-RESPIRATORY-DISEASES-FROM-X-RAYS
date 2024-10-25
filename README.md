@@ -281,7 +281,7 @@ Watch this demo video to see how to use the website effectively:
 
 ---
 
-## 🌐 Deployment Link
+## Deployment Link 🌐
 Explore the deployed version of our Chest Disease Detection by X-ray web application [here](https://github.com/fatma2123456/BreatheAI-Website/blob/main/README.md).
 
 ---
