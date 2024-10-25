@@ -289,6 +289,10 @@ Explore the deployed version of our Chest Disease Detection by X-ray web applica
 <pre>
 Fatma Elzhra ahmed  - Aartificial Intelligence Engineering - <b><a href="https://github.com/fatma2123456">fatma2123456</a></b>
 Abdelrahman Mohamed - Computer Science Engineering - <b><a href="https://github.com/AbdelrahmanMohamed252">AbdelrahmanMohamed252</a></b>
+Hanin Mustafa  - Computer Systems Engineering  - <b><a href="https://github.com/HaninMustafa9">HaninMustafa9</a></b>
+Karim Ehab   - Communication and computer engineering - <b><a href="https://github.com/Eng-Karim-Ehab">Eng-Karim-Ehab</a></b>
+Mahmoud Anas - Computer Science - <b><a href="https://github.com/MahmoudAnas046">MahmoudAnas046</a></b>
+ 
 Supervised By :
 Eng / Mahmoud Talaat 
 Ai Engineer at MCiT (Ministry of Communication and Information Technology)
