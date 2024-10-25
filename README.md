@@ -262,17 +262,12 @@ The confusion matrix provides a summary of the prediction results on a classific
 
 In this section, we present examples of the X-ray images for each class that will be analyzed using Grad-CAM. The images illustrate how the model identifies specific patterns related to different respiratory diseases.
 
-##  Normal
-![Normal Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Normal.png)
-
-##  Pneumonia-Bacterial
-![Pneumonia Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Pneumonia-Bacterial.png)
-
-##  COVID-19
-![COVID-19 Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/covid.png)
-
-##  Tuberculosis
-![Tuberculosis Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Tuberculosis.png)
+| Class                | Image                                                                                     |
+|----------------------|-------------------------------------------------------------------------------------------|
+| **Normal**           | ![Normal Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Normal.png)  |
+| **Pneumonia-Bacterial** | ![Pneumonia Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Pneumonia-Bacterial.png) |
+| **COVID-19**        | ![COVID-19 Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/covid.png)      |
+| **Tuberculosis**    | ![Tuberculosis Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Tuberculosis.png)  |
 
 ---
 
@@ -284,14 +279,10 @@ Watch this demo video to see how to use the website effectively:
     <img src="https://img.youtube.com/vi/VIDEO_ID/0.jpg" alt="Demo Video" width="640" height="360">
 </a>
 
-### How to Use the Website
-In this video, you will learn:
-- How to upload an X-ray image.
-- Understanding the model's predictions.
-- Interpreting the Grad-CAM visualizations.
-- Navigating the user interface.
+---
 
-Feel free to explore the website after watching the demo!
+## 🌐 Deployment Link
+Explore the deployed version of our Chest Disease Detection by X-ray web application [here](https://github.com/fatma2123456/BreatheAI-Website/blob/main/README.md).
 
 ---
 ## Authors ✨
