@@ -1,7 +1,4 @@
 # Chest Disease Detection by X-ray 
-<pre>                                                                <div style="text-align: right;">
-                                                        <img src="https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Picture2_20241025_195821_0000.png" alt="Government Logo" width="150"/> 
-</div></pre>
  <ul>
         <li><a href="#what-is-chest-disease-detection">What is Chest Disease Detection by X-ray?</a></li>
         <li><a href="#datasets-used">Datasets Used in This Project</a></li>
@@ -296,3 +293,6 @@ Supervised By :
 Eng / Mahmoud Talaat 
 Ai Engineer at MCiT (Ministry of Communication and Information Technology)
 TA at Zewail University ( Artificial intelligence and Data science )</pre>
+<pre>                                                                <div style="text-align: right;">
+                                                                                                                         <img src="https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Picture2_20241025_195821_0000.png" alt="Government Logo" width="150"/> 
+</div></pre>
