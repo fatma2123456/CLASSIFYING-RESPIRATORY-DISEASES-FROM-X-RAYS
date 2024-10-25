@@ -204,8 +204,8 @@ Below is a comparison between three models used for chest disease classification
 
 ### **Observations**:
 - **VGG19** showed the best overall performance with a **train accuracy of 95.54%**, **test accuracy of 91.65%**, and **validation accuracy of 91.63%**.
-- **VGG16** lagged behind, with significantly lower performance, especially in terms of test accuracy (**79.89%**) and validation accuracy (**77.61%**).
 - The model **trained from scratch** performed well but did not reach the accuracy levels of VGG19, with **train accuracy of 91.91%** and **test accuracy of 85.87%**.
+- **VGG16** lagged behind, with significantly lower performance, especially in terms of test accuracy (**79.89%**) and validation accuracy (**77.61%**).
 
 ---
 
