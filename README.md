@@ -318,7 +318,7 @@ In this section, we present examples of the X-ray images for each class that wil
 | **Pneumonia-Bacterial** | ![Pneumonia Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/Pneumonia-Bacterial_GradCAM.png) |
 | **COVID-19**        | ![COVID-19 Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/COVID-19_GradCAM.png)      |
 | **Pneumonia-Viral**        | ![COVID-19 Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/Pneumonia-Viral_GradCAM.png)      |
-| **Tuberculosis**    | ![Tuberculosis Class]([https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Tuberculosis.png](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/Tuberculosis_GradCAM.png))  |
+| **Tuberculosis**    | ![Tuberculosis Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/Tuberculosis_GradCAM.png)  |
 
 ---
 
