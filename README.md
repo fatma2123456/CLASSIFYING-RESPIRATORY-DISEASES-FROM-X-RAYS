@@ -1,4 +1,4 @@
-# Chest Disease Detection by X-ray 
+# Classifying Respiratory Diseases from X-rays
  <ul>
         <li><a href="#what-is-chest-disease-detection">What is Chest Disease Detection by X-ray?</a></li>
         <li><a href="#datasets-used">Datasets Used in This Project</a></li>
