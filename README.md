@@ -117,7 +117,7 @@ CHELA's ability to learn from labeled and unlabeled data through a self-supervis
 
 The CHELA model enhances X-ray images, making it easier to identify and analyze various respiratory conditions. Below is a comparison showcasing the original images alongside the enhanced CHELA images.
 
-| Condition                | Comparison of CHELA-Enhanced Images                      |
+| Condition                | Comparison of CHELA-Enhanced Images and Original Images                      |
 |-------------------------|---------------------------------------------------------|
 | **COVID-19**            | ![CHELA Image 1](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_COVID-19.png)   |
 | **Normal**              | ![CHELA Image 2](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_Normal.png)   |
