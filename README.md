@@ -152,11 +152,13 @@ Imbalanced data can cause several issues in model performance:
 - 
 
 
-<h2 id="solving-data-imbalance">Solving Data Imbalance Using Augmentation 🌱</h2>
+<h2 id="solving-data-imbalance">Solving Data Imbalance Using Augmentation And Class Weights 🌱</h2>
 
 <p>Imbalanced data is a common issue in machine learning, particularly in medical imaging datasets. To address this, <strong>data augmentation</strong> is an effective approach, and
 <b>Class weights</b> help to give more importance to the minority classes, ensuring that the model pays adequate attention to all classes during training.</p>
+
 ---
+
 #### **What is Data Augmentation?**  
 Data augmentation involves creating additional training data from the existing dataset by applying transformations to original images. This technique helps balance the dataset by artificially increasing the number of samples in underrepresented classes.
 
@@ -165,7 +167,7 @@ Data augmentation involves creating additional training data from the existing d
 - **Balancing Class Distribution**: Augmenting only the minority classes creates a more balanced dataset without the need for additional real-world data.
 - **Improving Model Robustness**: Augmented images make the model more resilient to variations like rotations, flips, and other distortions, enhancing performance on unseen data.
 ---
-#### **How Class Weights Work?**
+#### **Why Use Class Weights Work?**
 The class weights are calculated based on the distribution of the classes in the training data. By assigning a higher weight to the minority classes, the model will be penalized more for misclassifying these samples, encouraging it to learn more about them.
 
 #### **Class Weights Implementation**
