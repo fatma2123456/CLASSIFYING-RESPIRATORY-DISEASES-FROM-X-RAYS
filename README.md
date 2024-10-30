@@ -237,30 +237,33 @@ Here, we showcase the performance of **VGG19**, **VGG19 with CHELA**, **VGG16**,
 
 The results illustrate that the use of **CHELA** with **VGG19** not only improved the accuracy but also enhanced the model's ability to process images effectively, making it a valuable addition for medical imaging tasks.
 
-### **VGG19 Loss and Accuracy**:
-- Here is a visualization of **VGG19's Loss and Accuracy** during training:
+### **VGG19 with CHELA Loss and Accuracy**:
+- Here is a visualization of **VGG19 with CHELA's Loss and Accuracy** during training:
 
 ### **VGG19 Accuracy Plot**  
-![VGG19 Accuracy](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Train.png)
+![VGG19 Accuracy](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/TRAIN-VGG19.png)
 
 ### **VGG19 Loss Plot**  
-![VGG19 Loss](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Loss.png)
+![VGG19 Loss](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/Loss_VGG19.png)
 
 
 ---
 
 ### **Observations**:
-- **VGG19** showed the best overall performance with a **train accuracy of 95.54%**, **test accuracy of 91.65%**, and **validation accuracy of 91.63%**.
-- The model **trained from scratch** performed well but did not reach the accuracy levels of VGG19, with **train accuracy of 91.91%** and **test accuracy of 85.87%**.
-- **VGG16** lagged behind, with significantly lower performance, especially in terms of test accuracy (**79.89%**) and validation accuracy (**77.61%**).
+- **VGG19 with CHELA** achieved the highest performance with a **train accuracy of 97.46%**, **test accuracy of 92.56%**, and **validation accuracy of 92.24%**.
+- **VGG19** showed strong results but did not match the performance of VGG19 with CHELA, with a **train accuracy of 95.54%** and **test accuracy of 91.65%**.
+- **The model trained from scratch** performed well but did not reach the accuracy levels of VGG19 or VGG19 with CHELA, achieving a **train accuracy of 91.91%** and **test accuracy of 85.87%**.
+- **VGG16** exhibited significantly lower performance, particularly in test accuracy (**79.89%**) and validation accuracy (**77.61%**), reinforcing the need for deeper architectures in medical imaging tasks.
+
 
 ---
 
-### **Why VGG19 Outperformed**:
-- **Depth of Layers**: VGG19 has a deeper architecture, which allows it to learn more complex patterns, especially in medical imaging tasks.
-- **Transfer Learning**: Since VGG19 was pre-trained on ImageNet, it was able to transfer its learning to medical images effectively, especially after fine-tuning for chest X-rays.
+### **Why VGG19 with CHELA Outperformed**:
+- **Enhanced Feature Extraction**: The integration of the CHELA technique allowed VGG19 to enhance the visibility of diagnostic features in chest X-ray images, significantly improving the model's ability to learn relevant patterns.
+- **Deep Learning Synergy**: The combination of VGG19’s deeper architecture and the image processing capabilities of CHELA resulted in a powerful synergy, leading to better overall model performance on complex medical imaging tasks.
 
-Despite the resource constraints, VGG19 provided the most accurate and reliable results, making it the optimal choice for our task. We believe with further fine-tuning and access to better resources, the performance can be improved even further.
+Despite resource constraints, VGG19 with CHELA delivered the highest accuracy and reliability, solidifying its position as the optimal choice for our classification task. With further fine-tuning and improved resources, we anticipate even greater advancements in performance.
+
 
 ---
 
@@ -276,15 +279,15 @@ The following table summarizes the precision, recall, F1-score, and support for 
 
 | Class | Precision | Recall | F1-Score | Support |
 |-------|-----------|--------|----------|--------|
-| 0.0   | 0.97      | 0.98   | 0.97     | 980    |
-| 1.0   | 0.93      | 0.90   | 0.92     | 1203   |
-| 2.0   | 0.91      | 0.94   | 0.93     | 1300   |
-| 3.0   | 0.82      | 0.85   | 0.83     | 601    |
-| 4.0   | 0.84      | 0.80   | 0.82     | 601    |
-| 5.0   | 1.00      | 0.99   | 0.99     | 499    |
-| **Accuracy** |  |  | **0.92** | **5184** |
-| **Macro Avg** | 0.91 | 0.91 | 0.91 | 5184 |
-| **Weighted Avg** | 0.92 | 0.92 | 0.92 | 5184 |
+| 0.0   | 0.98      | 0.97   | 0.98     | 491    |
+| 1.0   | 0.96      | 0.89   | 0.93     | 602   |
+| 2.0   | 0.90      | 0.96   | 0.93     | 650   |
+| 3.0   | 0.86      | 0.87   | 0.87     | 301    |
+| 4.0   | 0.83      | 0.86   | 0.84     | 301    |
+| 5.0   | 1.00      | 0.99   | 0.99     | 250    |
+| **Accuracy** |  |  | **0.93** | **2595** |
+| **Macro Avg** | 0.92 | 0.92 | 0.92 | 2595 |
+| **Weighted Avg** | 0.93 | 0.93 | 0.93 | 2595 |
 
 ### Definitions:
 - **Precision**: The ratio of correctly predicted positive observations to the total predicted positives.
@@ -298,7 +301,7 @@ The following table summarizes the precision, recall, F1-score, and support for 
 
 The confusion matrix provides a summary of the prediction results on a classification problem. Below is the confusion matrix for the VGG19 model:
 
-![Confusion Matrix](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/confusion%20matrix.png)
+![Confusion Matrix](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/Confusion%20Matrix_VGG19.png)
 
 ### Notes:
 - The confusion matrix allows us to visualize how many instances were classified correctly and incorrectly across different classes.
@@ -311,10 +314,11 @@ In this section, we present examples of the X-ray images for each class that wil
 
 | Class                | Image                                                                                     |
 |----------------------|-------------------------------------------------------------------------------------------|
-| **Normal**           | ![Normal Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Normal.png)  |
-| **Pneumonia-Bacterial** | ![Pneumonia Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Pneumonia-Bacterial.png) |
-| **COVID-19**        | ![COVID-19 Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/covid.png)      |
-| **Tuberculosis**    | ![Tuberculosis Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Tuberculosis.png)  |
+| **Normal**           | ![Normal Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/Normal_GradCAM.png)  |
+| **Pneumonia-Bacterial** | ![Pneumonia Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/Pneumonia-Bacterial_GradCAM.png) |
+| **COVID-19**        | ![COVID-19 Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/COVID-19_GradCAM.png)      |
+| **Pneumonia-Viral**        | ![COVID-19 Class](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/Pneumonia-Viral_GradCAM.png)      |
+| **Tuberculosis**    | ![Tuberculosis Class]([https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Tuberculosis.png](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/Tuberculosis_GradCAM.png))  |
 
 ---
 
