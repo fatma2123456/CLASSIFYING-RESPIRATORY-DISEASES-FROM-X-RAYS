@@ -93,6 +93,16 @@ As we will see in the next figure:
 ![Data Visualization](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/Dataset.png)
 
 ---
+ <h2 id="structure-of-datasets">Structure of the Datasets 📂</h2>
+
+Each dataset follows the typical data structure for deep learning tasks:
+
+- **Training Set**: 🏋️‍♂️ This set is used to train the model and constitutes about 70-80% of the dataset.
+- **Validation Set**: 🔧 This is 10-20% of the dataset and is used to fine-tune model hyperparameters during training to avoid overfitting.
+- **Test Set**: 🧪 This set, around 10-20% of the dataset, is used to evaluate the model’s performance on unseen data.
+
+---
+
 <h2 id="chela"> CHELA: Contrastive Learning with Efficient Latent Alignment</h2>
 
 
@@ -140,22 +150,12 @@ Imbalanced data can cause several issues in model performance:
 - **Overfitting**: The model may focus on the majority class and fail to generalize well to the minority class, resulting in overfitting.
 - **Bias**: Predictions may be biased toward the majority class, which can lead to incorrect conclusions, especially in critical applications like medical diagnostics.
 - 
----
- <h2 id="structure-of-datasets">Structure of the Datasets 📂</h2>
-
-Each dataset follows the typical data structure for deep learning tasks:
-
-- **Training Set**: 🏋️‍♂️ This set is used to train the model and constitutes about 70-80% of the dataset.
-- **Validation Set**: 🔧 This is 10-20% of the dataset and is used to fine-tune model hyperparameters during training to avoid overfitting.
-- **Test Set**: 🧪 This set, around 10-20% of the dataset, is used to evaluate the model’s performance on unseen data.
-
----
 
 
 <h2 id="solving-data-imbalance">Solving Data Imbalance Using Augmentation 🌱</h2>
 
-Imbalanced data is a common issue in machine learning, particularly in medical imaging datasets. To address this, **data augmentation** is an effective approach,and
-Class weights help to give more importance to the minority classes, ensuring that the model pays adequate attention to all classes during training.
+<p>Imbalanced data is a common issue in machine learning, particularly in medical imaging datasets. To address this, <strong>data augmentation</strong> is an effective approach, and
+<b>Class weights</b> help to give more importance to the minority classes, ensuring that the model pays adequate attention to all classes during training.</p>
 ---
 #### **What is Data Augmentation?**  
 Data augmentation involves creating additional training data from the existing dataset by applying transformations to original images. This technique helps balance the dataset by artificially increasing the number of samples in underrepresented classes.
