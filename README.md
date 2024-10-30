@@ -215,20 +215,27 @@ VGG19 was originally trained on ImageNet, which includes general images like ani
 
 ---
 
- <h2 id="#why-vgg19">Why We Chose VGG19 Over VGG16 🔄</h2>
+ ## Why We Chose VGG19 Over VGG16 🔄
+Initially, we tried using **VGG16** for our chest disease classification, but the accuracy results were not as high as we expected. After exploring different models, we chose **VGG19** because its deeper architecture and feature extraction capabilities are more suitable for medical imaging tasks like chest X-rays. Despite the limited resources, we managed to achieve good accuracy using VGG19, and we know that with better computational power, the accuracy could be significantly improved.
 
-Initially, we tried using **VGG16** for our chest disease classification, but the **accuracy** results were not as high as we expected. After exploring different models, we chose **VGG19** because its deeper architecture and feature extraction capabilities are more suitable for medical imaging tasks like chest X-rays. Despite the limited resources, we managed to achieve good accuracy using VGG19, and we know that with better computational power, the accuracy could be significantly improved.
+## Model Comparison: VGG19 vs VGG16 vs VGG19 with CHELA vs From Scratch 📊
+Here, we showcase the performance of **VGG19**, **VGG19 with CHELA**, **VGG16**, and a **model trained from scratch**. The results highlight the impact of using CHELA for enhancing the image processing capabilities of VGG19.
 
----
-<h2 id="#model-comparison">Model Comparison: VGG19 vs VGG16 vs Model From Scratch 📊</h2>
+### Performance Summary
+- **VGG19 with CHELA** achieved the highest accuracy at **97.46%**, showcasing the effectiveness of the CHELA technique in improving model performance.
+- **VGG19** followed with an accuracy of **95.54%**.
+- **From Scratch** achieved an accuracy of **91.91%**.
+- **VGG16** had the lowest accuracy at **80.02%**, demonstrating the need for deeper architectures in medical imaging tasks.
 
-Below is a comparison between three models used for chest disease classification: **VGG19**, **VGG16**, and a model trained **from scratch**. The comparison highlights their respective training, validation, and test accuracy along with their losses.
+### Detailed Model Performance
+| **Model**                | **Train Loss** | **Val Loss** | **Test Loss** | **Train Accuracy** | **Val Accuracy** | **Test Accuracy** |
+|--------------------------|----------------|--------------|---------------|--------------------|------------------|-------------------|
+| **VGG19 with CHELA**     | **0.0681**     | **0.2247**   | **0.2257**    | **97.46%**          | **92.24%**        | **92.56%**         |
+| **VGG19**                | 0.1166         | 0.2392       | 0.2365        | **95.54%**          | **91.63%**        | **91.65%**         |
+| **From Scratch**         | 0.9191         | 0.8634       | 0.8587        | **91.91%**          | **86.34%**        | **85.87%**         |
+| **VGG16**                | 0.4927         | 0.5423       | 0.5021        | **80.02%**          | **77.61%**        | **79.89%**         |
 
-| **Model**           | **Train Loss** | **Val Loss** | **Test Loss** | **Train Accuracy** | **Val Accuracy** | **Test Accuracy** |
-|---------------------|----------------|--------------|---------------|--------------------|------------------|-------------------|
-| **VGG19**           | 0.1166         | 0.2392       | 0.2365        | **95.54%**          | **91.63%**        | **91.65%**         |
-| **VGG16**           | 0.4927         | 0.5423       | 0.5021        | 80.02%              | 77.61%            | 79.89%             |
-| **From Scratch**     | 0.9191         | 0.8634       | 0.8587        | 91.91%              | 86.34%            | 85.87%             |
+The results illustrate that the use of **CHELA** with **VGG19** not only improved the accuracy but also enhanced the model's ability to process images effectively, making it a valuable addition for medical imaging tasks.
 
 ### **VGG19 Loss and Accuracy**:
 - Here is a visualization of **VGG19's Loss and Accuracy** during training:
