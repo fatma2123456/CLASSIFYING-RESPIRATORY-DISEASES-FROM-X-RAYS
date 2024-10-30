@@ -255,7 +255,7 @@ The results illustrate that the use of **CHELA** with **VGG19** not only improve
 
 ### **Why VGG19 with CHELA Outperformed**:
 - **Enhanced Feature Extraction**: The integration of the CHELA technique allowed VGG19 to enhance the visibility of diagnostic features in chest X-ray images, significantly improving the model's ability to learn relevant patterns.
-- **Deep Learning Synergy**: The combination of VGG19’s deeper architecture and the image processing capabilities of CHELA resulted in a powerful synergy, leading to better overall model performance on complex medical imaging tasks.
+- **Deep Learning Synergy**: The combination of VGG19’s deeper architecture and CHELA's image processing capabilities resulted in a powerful synergy, leading to better overall model performance on complex medical imaging tasks.
 
 Despite resource constraints, VGG19 with CHELA delivered the highest accuracy and reliability, solidifying its position as the optimal choice for our classification task. With further fine-tuning and improved resources, we anticipate even greater advancements in performance.
 
@@ -294,7 +294,7 @@ The following table summarizes the precision, recall, F1-score, and support for 
 
 ## Confusion Matrix 📉
 
-The confusion matrix provides a summary of the prediction results on a classification problem. Below is the confusion matrix for the VGG19 model:
+The confusion matrix summarizes the prediction results of a classification problem. Below is the confusion matrix for the VGG19 model:
 
 ![Confusion Matrix](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/Confusion%20Matrix_VGG19.png)
 
@@ -333,7 +333,7 @@ Explore the deployed version of our Chest Disease Detection by X-ray web applica
 ---
 ## Authors ✨
 <pre>
-Fatma Elzhra ahmed  - Aartificial Intelligence Engineering - <b><a href="https://github.com/fatma2123456">fatma2123456</a></b>
+Fatma Elzhra ahmed  - Artificial Intelligence Engineering - <b><a href="https://github.com/fatma2123456">fatma2123456</a></b>
 Abdelrahman Mohamed - Computer Science Engineering - <b><a href="https://github.com/AbdelrahmanMohamed252">AbdelrahmanMohamed252</a></b>
 Hanin Mustafa  - Computer Systems Engineering  - <b><a href="https://github.com/HaninMustafa9">HaninMustafa9</a></b>
 Karim Ehab   - Communication and computer engineering - <b><a href="https://github.com/Eng-Karim-Ehab">Eng-Karim-Ehab</a></b>
@@ -342,7 +342,7 @@ Mahmoud Anas - Computer Science - <b><a href="https://github.com/MahmoudAnas046"
 Supervised By :
 Eng / Mahmoud Talaat 
 Ai Engineer at MCiT (Ministry of Communication and Information Technology)
-TA at Zewail University ( Artificial intelligence and Data science )
+TA at Zewail University ( Artificial intelligence and Data Science )
   <div style="text-align: right;">
                                                                                                      <img src="https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Picture2_20241025_195821_0000.png" alt="Government Logo" width="150"/> 
 </div>
