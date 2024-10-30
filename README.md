@@ -75,10 +75,6 @@ Visualization in the context of machine learning refers to the graphical represe
 - **Debugging**: Visualization can highlight where the model might be going wrong. For example, Grad-CAM (Gradient-weighted Class Activation Mapping) heatmaps can show which parts of an image the model focused on when making a decision, helping us understand and interpret predictions.
 - **Communicating Results**: Visualizations make it easier to communicate results to stakeholders, especially non-technical individuals, by providing a clear and concise way to understand the model's output and its reliability.
 
-<h2 id="imbalanced-data">Imbalanced Data ⚖️</h2>
-This imbalance can cause challenges when training machine learning models, as models may become biased toward the majority class. They might achieve high overall accuracy by primarily predicting the majority class while failing to effectively recognize the minority class. This can lead to poor performance, especially for applications where the minority class is of significant interest, such as in medical diagnoses or fraud detection.
-
-
  <h2 id="class-distribution">Class Distribution 📊</h2>
 Here’s the distribution of images across different classes, sorted in descending order by the number of images:
 
@@ -133,7 +129,8 @@ The CHELA model enhances X-ray images, making it easier to identify and analyze 
 3. **Improved Feature Recognition**: CHELA empowers deep learning models to discern textures and densities that may be overlooked. This capability is crucial for differentiating between conditions, such as **viral versus bacterial pneumonia**, ensuring patients receive the most accurate diagnoses.
 
 ---
-
+<h2 id="imbalanced-data">Imbalanced Data ⚖️</h2>
+This imbalance can cause challenges when training machine learning models, as models may become biased toward the majority class. They might achieve high overall accuracy by primarily predicting the majority class while failing to effectively recognize the minority class. This can lead to poor performance, especially for applications where the minority class is of significant interest, such as in medical diagnoses or fraud detection.
 ---
 <h2 id="imbalanced-data-impact">Imbalanced Data Can Affect Our Model ⚖️</h2>
 
@@ -157,8 +154,9 @@ Each dataset follows the typical data structure for deep learning tasks:
 
 <h2 id="solving-data-imbalance">Solving Data Imbalance Using Augmentation 🌱</h2>
 
-Imbalanced data is a common issue in machine learning, particularly in medical imaging datasets. To address this, **data augmentation** is an effective approach.
-
+Imbalanced data is a common issue in machine learning, particularly in medical imaging datasets. To address this, **data augmentation** is an effective approach,and
+Class weights help to give more importance to the minority classes, ensuring that the model pays adequate attention to all classes during training.
+---
 #### **What is Data Augmentation?**  
 Data augmentation involves creating additional training data from the existing dataset by applying transformations to original images. This technique helps balance the dataset by artificially increasing the number of samples in underrepresented classes.
 
@@ -166,28 +164,30 @@ Data augmentation involves creating additional training data from the existing d
 - **Increasing Diversity**: Introduces variability in the dataset, allowing the model to generalize better.
 - **Balancing Class Distribution**: Augmenting only the minority classes creates a more balanced dataset without the need for additional real-world data.
 - **Improving Model Robustness**: Augmented images make the model more resilient to variations like rotations, flips, and other distortions, enhancing performance on unseen data.
+---
+#### **How Class Weights Work?**
+The class weights are calculated based on the distribution of the classes in the training data. By assigning a higher weight to the minority classes, the model will be penalized more for misclassifying these samples, encouraging it to learn more about them.
 
-### **Common Augmentation Techniques**  
-Here are some commonly used techniques to handle data imbalance:
+#### **Class Weights Implementation**
+While we focus on rescaling our images, we will use the following approach to compute class weights:
 
-1. **Rotation**: Rotating images by small angles to create new perspectives.
-2. **Zooming**: Randomly zooming into images to simulate different scales.
-3. **Shifting**: Translating images along the x or y axis.
-   ```python
-   from keras.preprocessing.image import ImageDataGenerator
-   
-   train_gen = ImageDataGenerator(
-       rescale=1. / 255,
-       zoom_range=0.1,
-       width_shift_range=0.1,
-       height_shift_range=0.1,
-       rotation_range=10,
-       fill_mode='nearest'
-   )
-   test_gen = ImageDataGenerator(rescale=1. / 255)
-   val_gen = ImageDataGenerator(rescale=1. / 255)
+```python
+from sklearn.utils.class_weight import compute_class_weight
 
+# Get the class indices from the training generator
+class_indices = train_generator.class_indices
+class_labels = list(class_indices.keys())
 
+# Obtain the labels for each image in the training data
+train_labels = train_generator.classes
+
+# Compute the class weights
+class_weights = compute_class_weight('balanced', classes=np.unique(train_labels), y=train_labels)
+class_weights_dict = dict(enumerate(class_weights))
+
+print("Class Labels:", class_labels)
+print("Class Weights:", class_weights_dict)
+```
 ---
  <h2 id="vgg19">What is VGG19? 🤖</h2>
 
