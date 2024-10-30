@@ -7,14 +7,10 @@
         <li><a href="#imbalanced-data">Imbalanced Data</a></li>
         <li><a href="#class-distribution">Class Distribution</a></li>
         <li><a href="#imbalanced-data-impact">Imbalanced Data Can Affect Our Model</a></li>
-        <li><a href="#solving-data-imbalance">Solving Data Imbalance Using Augmentation</a></li>
+        <li><a href="#solving-data-imbalance">Solving Data Imbalance</a></li>
         <li><a href="#structure-of-datasets">Structure of the Datasets</a></li>
-        <li><a href="#vgg19">What is VGG19?</a></li>
-        <li><a href="#similarity-vgg19-chest-diseases">How Similar is VGG19 ImageNet with Chest Diseases Images?</a></li>
-        <li><a href="#vgg19-advantages-disadvantages">Advantages and Disadvantages of VGG19</a></li>
-        <li><a href="#why-vgg19">Why We Chose VGG19 Over VGG16</a></li>
-        <li><a href="#model-comparison">Model Comparison: VGG19 vs VGG16 vs Model From Scratch</a></li>
-        <li><a href="#grad-cam-visualizations">Grad-CAM Visualizations</a></li>
+        <li><a href="#vgg19">Modeling</a></li>
+        
     </ul>
 <h2 id="what-is-chest-disease-detection">What is Chest Disease Detection by X-ray? 🤔</h2>
 
