@@ -94,7 +94,45 @@ Here’s the distribution of images across different classes, sorted in descendi
 
 As we will see in the next figure:
 
-![Data Visualization](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/Image/Data%20Visualization.png)
+![Data Visualization](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/Dataset.png)
+
+---
+<h2 id="chela"> CHELA: Contrastive Learning with Efficient Latent Alignment</h2>
+
+
+CHELA (Contrastive Learning with Efficient Latent Alignment) represents a groundbreaking leap in the realm of medical imaging. In a world where every detail counts, especially when it comes to diagnosing life-altering conditions, CHELA emerges as a beacon of hope. This innovative deep-learning approach enhances the ability of convolutional neural networks (CNNs) to learn features specifically tailored for medical image analysis.
+
+CHELA's ability to learn from labeled and unlabeled data through a self-supervised learning framework sets it apart. This unique capability allows the model to uncover subtle patterns in medical images, such as X-rays, that may otherwise go unnoticed. By enhancing the diagnostic process, CHELA stands to make a profound impact on patient outcomes.
+
+**Imagine the possibilities:**
+
+- **Highlighting Fine-Grained Features**: CHELA reveals the intricate details that tell a story about a patient's health, identifying small variations in texture, shape, or opacity that are critical for accurate diagnosis.
+- **Improving Generalization**: With CHELA, models can adapt and respond to diverse datasets, learning to recognize conditions in ways that mirror real-world variability.
+- **Reducing Data Requirements**: By harnessing unlabeled data for pre-training, CHELA alleviates the burden on healthcare professionals who often struggle to acquire large annotated datasets.
+
+---
+
+### Comparison of CHELA-Enhanced Images with Original Images 🖼️
+
+The CHELA model enhances X-ray images, making it easier to identify and analyze various respiratory conditions. Below is a comparison showcasing the original images alongside the enhanced CHELA images.
+
+| Condition                | Comparison of CHELA-Enhanced Images                      |
+|-------------------------|---------------------------------------------------------|
+| **COVID-19**            | ![CHELA Image 1](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_COVID-19.png)   |
+| **Normal**              | ![CHELA Image 2](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_Normal.png)   |
+| **Lung Opacity**        | ![CHELA Image 3](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_Lung_Opacity.png)   |
+| **Pneumonia-Bacterial** | ![CHELA Image 4](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_Pneumonia-Bacterial.png)   |
+| **Pneumonia-Viral**     | ![CHELA Image 5](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_Pneumonia-Viral.png)   |
+| **Tuberculosis**        | ![CHELA Image 6](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_Tuberculosis.png)   |
+
+
+### Key Differences
+
+1. **Enhanced Contrast**: The CHELA-transformed images unveil lung opacities and inflammations that are critical in diagnosing diseases like **pneumonia** or **COVID-19**. This clarity can make all the difference in timely and effective treatment.
+2. **Clearer Edges and Boundaries**: CHELA sharpens the edges of tissues, illuminating the distinctions between healthy and affected areas. This precision is vital in identifying conditions like **tuberculosis**, where visible lesions can mean life or death.
+3. **Improved Feature Recognition**: CHELA empowers deep learning models to discern textures and densities that may be overlooked. This capability is crucial for differentiating between conditions, such as **viral versus bacterial pneumonia**, ensuring patients receive the most accurate diagnoses.
+
+---
 
 ---
 <h2 id="imbalanced-data-impact">Imbalanced Data Can Affect Our Model ⚖️</h2>
