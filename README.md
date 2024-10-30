@@ -10,7 +10,6 @@
         <li><a href="#solving-data-imbalance">Solving Data Imbalance</a></li>
         <li><a href="#structure-of-datasets">Structure of the Datasets</a></li>
         <li><a href="#vgg19">Modeling</a></li>
-        
     </ul>
 <h2 id="what-is-chest-disease-detection">What is Chest Disease Detection by X-ray? 🤔</h2>
 
