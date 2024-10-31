@@ -109,7 +109,9 @@ CHALE's ability to enhance image contrast through Contrast-Limited Adaptive Hist
 **Imagine the possibilities:**
 
 -**Highlighting Fine-Grained Features**: CHALE brings out intricate details within medical images, enhancing subtle variations in texture, shape, and opacity that are essential for precise diagnosis.
+
 -**Enhancing Image Clarity Across Cases**: With CHALE’s adaptable contrast enhancement, images from diverse sources can be processed to reveal critical features, making diagnosis more consistent and reliable across varied datasets.
+
 -**Reducing Annotation Burden**: CHALE’s use of contrast enhancement reduces the dependency on extensively labeled datasets, helping healthcare professionals work more efficiently, even with limited annotations.
 
 ---
