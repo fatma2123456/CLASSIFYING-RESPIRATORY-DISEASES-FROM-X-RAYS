@@ -94,8 +94,8 @@ As we will see in the next figure:
 Each dataset follows the typical data structure for deep learning tasks:
 
 - **Training Set**: 🏋️‍♂️ This set is used to train the model and constitutes about 70-80% of the dataset.
-- **Validation Set**: 🔧 This is 10-20% of the dataset and is used to fine-tune model hyperparameters during training to avoid overfitting.
-- **Test Set**: 🧪 This set, around 10-20% of the dataset, is used to evaluate the model’s performance on unseen data.
+- **Validation Set**: 🔧 This is 10% of the dataset and is used to fine-tune model hyperparameters during training to avoid overfitting.
+- **Test Set**: 🧪 This set, around 10% of the dataset, is used to evaluate the model’s performance on unseen data.
 
 ---
 
