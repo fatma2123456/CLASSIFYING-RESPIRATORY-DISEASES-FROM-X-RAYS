@@ -9,7 +9,7 @@
         <li><a href="#imbalanced-data-impact">Imbalanced Data Can Affect Our Model</a></li>
         <li><a href="#solving-data-imbalance">Solving Data Imbalance</a></li>
         <li><a href="#structure-of-datasets">Structure of the Datasets</a></li>
-        <li><a href="#chale">Enhancing Image Contrast with CHALE</a></li>
+        <li><a href="#CLAHE">Enhancing Image Contrast with CLAHE</a></li>
         <li><a href="#vgg19">Modeling</a></li>
     </ul>
 <h2 id="what-is-chest-disease-detection">What is Chest Disease Detection by X-ray? 🤔</h2>
@@ -99,42 +99,42 @@ Each dataset follows the typical data structure for deep learning tasks:
 
 ---
 
-<h2 id="chale"> CHALE_Contrast Histogram Adaptive Limited Equalization</h2>
+<h2 id="clahe">CLAHE: Contrast-Limited Adaptive Histogram Equalization</h2>
 
 
-**CHALE** (Contrast Histogram Adaptive Limited Equalization) is a Python-based image enhancement filter designed to improve the contrast of images by performing adaptive histogram equalization with a contrast limit. This approach enhances important details in images without over-amplifying noise, making it ideal for applications like medical imaging where subtle details are crucial.
+**CLAHE** (Contrast-Limited Adaptive Histogram Equalization)  is a Python-based image enhancement technique designed to improve image contrast adaptively. By using parameters like clipLimit=2.0 and tileGridSize=(8, 8), CLAHE applies a localized histogram equalization with a limit on contrast amplification, which helps prevent over-enhancement of noise. This makes it especially useful for applications in medical imaging, where subtle details are important for diagnosis.
 
-CHALE's ability to enhance image contrast through Contrast-Limited Adaptive Histogram Equalization sets it apart as an invaluable tool in medical imaging. This unique approach enhances critical visual details in medical images, such as X-rays, by amplifying important contrasts without over-emphasizing noise. By refining the visibility of subtle patterns and structures, CHALE contributes to a more accurate diagnostic process, standing to make a profound impact on patient outcomes.
+CLAHE’s adaptive approach effectively enhances key details in medical images, such as X-rays, amplifying important contrasts without excessive noise. This refinement of subtle patterns and structures contributes to a more accurate diagnostic process, potentially improving patient outcomes
 
 **Imagine the possibilities:**
 
--**Highlighting Fine-Grained Features**: CHALE brings out intricate details within medical images, enhancing subtle variations in texture, shape, and opacity that are essential for precise diagnosis.
+-**Highlighting Fine-Grained Features**: CLAHE brings out intricate details within medical images, enhancing subtle variations in texture, shape, and opacity that are essential for precise diagnosis.
 
--**Enhancing Image Clarity Across Cases**: With CHALE’s adaptable contrast enhancement, images from diverse sources can be processed to reveal critical features, making diagnosis more consistent and reliable across varied datasets.
+-**Enhancing Image Clarity Across Cases**: With CLAHE’s adaptable contrast enhancement, images from diverse sources can be processed to reveal critical features, making diagnosis more consistent and reliable across varied datasets.
 
--**Reducing Annotation Burden**: CHALE’s use of contrast enhancement reduces the dependency on extensively labeled datasets, helping healthcare professionals work more efficiently, even with limited annotations.
+-**Reducing Annotation Burden**: CLAHE’s use of contrast enhancement reduces the dependency on extensively labeled datasets, helping healthcare professionals work more efficiently, even with limited annotations.
 
 ---
 
-### Comparison of CHALE-Enhanced Images with Original Images 🖼️
+### Comparison of CLAHE-Enhanced Images with Original Images 🖼️
 
-The CHALE filter enhances X-ray images by improving contrast, making it easier to identify and analyze various respiratory conditions. Below is a comparison showcasing the original images alongside the enhanced CHALE images.
+The CLAHE filter enhances X-ray images by improving contrast, making it easier to identify and analyze various respiratory conditions. Below is a comparison showcasing the original images alongside the enhanced CLAHE images.
 
-| Condition                | Comparison of CHALE-Enhanced Images and Original Images                      |
+| Condition                | Comparison of CLAHE-Enhanced Images and Original Images                      |
 |-------------------------|---------------------------------------------------------|
-| **COVID-19**            | ![CHALE Image 1](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_COVID-19.png)   |
-| **Normal**              | ![CHALE Image 2](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_Normal.png)   |
-| **Lung Opacity**        | ![CHALE Image 3](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_Lung_Opacity.png)   |
-| **Pneumonia-Bacterial** | ![CHALE Image 4](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_Pneumonia-Bacterial.png)   |
-| **Pneumonia-Viral**     | ![CHALE Image 5](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_Pneumonia-Viral.png)   |
-| **Tuberculosis**        | ![CHALE Image 6](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_Tuberculosis.png)   |
+| **COVID-19**            | ![CLAHE Image 1](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_COVID-19.png)   |
+| **Normal**              | ![CLAHE Image 2](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_Normal.png)   |
+| **Lung Opacity**        | ![CLAHE Image 3](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_Lung_Opacity.png)   |
+| **Pneumonia-Bacterial** | ![CLAHE Image 4](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_Pneumonia-Bacterial.png)   |
+| **Pneumonia-Viral**     | ![CLAHE Image 5](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_Pneumonia-Viral.png)   |
+| **Tuberculosis**        | ![CLAHE Image 6](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/CLAHE_Tuberculosis.png)   |
 
 
 ### Key Differences
 
-1. **Enhanced Contrast**: The CHALE-transformed images unveil lung opacities and inflammations that are critical in diagnosing diseases like **pneumonia** or **COVID-19**. This clarity can make all the difference in timely and effective treatment.
-2. **Clearer Edges and Boundaries**: CHALE sharpens the edges of tissues, illuminating the distinctions between healthy and affected areas. This precision is vital in identifying conditions like **tuberculosis**, where visible lesions can mean life or death.
-3. **Improved Feature Recognition**: CHALE empowers deep learning models to discern textures and densities that may be overlooked. This capability is crucial for differentiating between conditions, such as **viral versus bacterial pneumonia**, ensuring patients receive the most accurate diagnoses.
+1. **Enhanced Contrast**: The CLAHE-transformed images unveil lung opacities and inflammations that are critical in diagnosing diseases like **pneumonia** or **COVID-19**. This clarity can make all the difference in timely and effective treatment.
+2. **Clearer Edges and Boundaries**: CLAHE sharpens the edges of tissues, illuminating the distinctions between healthy and affected areas. This precision is vital in identifying conditions like **tuberculosis**, where visible lesions can mean life or death.
+3. **Improved Feature Recognition**: CLAHE empowers deep learning models to discern textures and densities that may be overlooked. This capability is crucial for differentiating between conditions, such as **viral versus bacterial pneumonia**, ensuring patients receive the most accurate diagnoses.
 
 ---
 <h2 id="imbalanced-data">Imbalanced Data ⚖️</h2>
@@ -216,11 +216,11 @@ VGG19 was originally trained on ImageNet, which includes general images like ani
  ## Why We Chose VGG19 Over VGG16 🔄
 Initially, we tried using **VGG16** for our chest disease classification, but the accuracy results were not as high as we expected. After exploring different models, we chose **VGG19** because its deeper architecture and feature extraction capabilities are more suitable for medical imaging tasks like chest X-rays. Despite the limited resources, we managed to achieve good accuracy using VGG19, and we know that with better computational power, the accuracy could be significantly improved.
 
-## Model Comparison: VGG19 vs VGG16 vs VGG19 with CHALE vs From Scratch 📊
-Here, we showcase the performance of **VGG19**, **VGG19 with CHALE**, **VGG16**, and a **model trained from scratch**. The results highlight the impact of using CHALE for enhancing the image processing capabilities of VGG19.
+## Model Comparison: VGG19 vs VGG16 vs VGG19 with CLAHE vs From Scratch 📊
+Here, we showcase the performance of **VGG19**, **VGG19 with CLAHE**, **VGG16**, and a **model trained from scratch**. The results highlight the impact of using CLAHE for enhancing the image processing capabilities of VGG19.
 
 ### Performance Summary
-- **VGG19 with CHALE** achieved the highest accuracy at **97.46%**, showcasing the effectiveness of the CHALE technique in improving model performance.
+- **VGG19 with CLAHE** achieved the highest accuracy at **97.46%**, showcasing the effectiveness of the CLAHE technique in improving model performance.
 - **VGG19** followed with an accuracy of **95.54%**.
 - **From Scratch** achieved an accuracy of **91.91%**.
 - **VGG16** had the lowest accuracy at **80.02%**, demonstrating the need for deeper architectures in medical imaging tasks.
@@ -228,15 +228,15 @@ Here, we showcase the performance of **VGG19**, **VGG19 with CHALE**, **VGG16**,
 ### Detailed Model Performance
 | **Model**                | **Train Loss** | **Val Loss** | **Test Loss** | **Train Accuracy** | **Val Accuracy** | **Test Accuracy** |
 |--------------------------|----------------|--------------|---------------|--------------------|------------------|-------------------|
-| **VGG19 with CHALE**     | **0.0681**     | **0.2247**   | **0.2257**    | **97.46%**          | **92.24%**        | **92.56%**         |
+| **VGG19 with CLAHE**     | **0.0681**     | **0.2247**   | **0.2257**    | **97.46%**          | **92.24%**        | **92.56%**         |
 | **VGG19**                | 0.1166         | 0.2392       | 0.2365        | **95.54%**          | **91.63%**        | **91.65%**         |
 | **From Scratch**         | 0.9191         | 0.8634       | 0.8587        | **91.91%**          | **86.34%**        | **85.87%**         |
 | **VGG16**                | 0.4927         | 0.5423       | 0.5021        | **80.02%**          | **77.61%**        | **79.89%**         |
 
-The results illustrate that the use of **CHALE** with **VGG19** not only improved the accuracy but also enhanced the model's ability to process images effectively, making it a valuable addition for medical imaging tasks.
+The results illustrate that the use of **CLAHE** with **VGG19** not only improved the accuracy but also enhanced the model's ability to process images effectively, making it a valuable addition for medical imaging tasks.
 
-### **VGG19 with CHALE Loss and Accuracy**:
-- Here is a visualization of **VGG19 with CHALE's Loss and Accuracy** during training:
+### **VGG19 with CLAHE Loss and Accuracy**:
+- Here is a visualization of **VGG19 with CLAHE's Loss and Accuracy** during training:
 
 ### **VGG19 Accuracy Plot**  
 ![VGG19 Accuracy](https://github.com/fatma2123456/CLASSIFYING-RESPIRATORY-DISEASES-FROM-X-RAYS/blob/main/IMAGE%20FOR%20MODEL/TRAIN-VGG19.png)
@@ -248,19 +248,19 @@ The results illustrate that the use of **CHALE** with **VGG19** not only improve
 ---
 
 ### **Observations**:
-- **VGG19 with CHALE** achieved the highest performance with a **train accuracy of 97.46%**, **test accuracy of 92.56%**, and **validation accuracy of 92.24%**.
-- **VGG19** showed strong results but did not match the performance of VGG19 with CHALE, with a **train accuracy of 95.54%** and **test accuracy of 91.65%**.
-- **The model trained from scratch** performed well but did not reach the accuracy levels of VGG19 or VGG19 with CHALE, achieving a **train accuracy of 91.91%** and **test accuracy of 85.87%**.
+- **VGG19 with CLAHE** achieved the highest performance with a **train accuracy of 97.46%**, **test accuracy of 92.56%**, and **validation accuracy of 92.24%**.
+- **VGG19** showed strong results but did not match the performance of VGG19 with CLAHE, with a **train accuracy of 95.54%** and **test accuracy of 91.65%**.
+- **The model trained from scratch** performed well but did not reach the accuracy levels of VGG19 or VGG19 with CLAHE, achieving a **train accuracy of 91.91%** and **test accuracy of 85.87%**.
 - **VGG16** exhibited significantly lower performance, particularly in test accuracy (**79.89%**) and validation accuracy (**77.61%**), reinforcing the need for deeper architectures in medical imaging tasks.
 
 
 ---
 
-### **Why VGG19 with CHALE Outperformed**:
-- **Enhanced Feature Extraction**: The integration of the CHALE technique allowed VGG19 to enhance the visibility of diagnostic features in chest X-ray images, significantly improving the model's ability to learn relevant patterns.
-- **Deep Learning Synergy**: The combination of VGG19’s deeper architecture and CHALE's image processing capabilities resulted in a powerful synergy, leading to better overall model performance on complex medical imaging tasks.
+### **Why VGG19 with CLAHE Outperformed**:
+- **Enhanced Feature Extraction**: The integration of the CLAHE technique allowed VGG19 to enhance the visibility of diagnostic features in chest X-ray images, significantly improving the model's ability to learn relevant patterns.
+- **Deep Learning Synergy**: The combination of VGG19’s deeper architecture and CLAHE's image processing capabilities resulted in a powerful synergy, leading to better overall model performance on complex medical imaging tasks.
 
-Despite resource constraints, VGG19 with CHALE delivered the highest accuracy and reliability, solidifying its position as the optimal choice for our classification task. With further fine-tuning and improved resources, we anticipate even greater advancements in performance.
+Despite resource constraints, VGG19 with CLAHE delivered the highest accuracy and reliability, solidifying its position as the optimal choice for our classification task. With further fine-tuning and improved resources, we anticipate even greater advancements in performance.
 
 
 ---
